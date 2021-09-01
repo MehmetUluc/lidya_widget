@@ -1,0 +1,25 @@
+{
+    "name": "lidyapos/widget",
+    "description": "Widget package",
+    "type": "package",
+    "autoload": {
+        "psr-4": {
+            "LidyaPos\\Widget\\": "src"
+        }
+    },
+    "require": {
+        "lidyapos/platform": "*@dev",
+        "lidyapos/theme": "*@dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LidyaPos\\Widget\\Providers\\WidgetServiceProvider"
+            ],
+            "aliases": {
+                "Widget": "LidyaPos\\Widget\\Facades\\WidgetFacade",
+                "WidgetGroup": "LidyaPos\\Widget\\Facades\\WidgetGroupFacade"
+            }
+        }
+    }
+}
